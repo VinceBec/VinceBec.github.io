@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:silver;
+}
+
+/* Split the screen in half */
+.split {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.leftside {
+  left: 0;
+  background-color: LightBlue;
+}
+
+/* Control the right side */
+.rightside {
+ right: 0;
+ background-color: Black;
+ color: white;
+}
+
+/* If you want the content centered horizontally and vertically */
+
+.centered {
+  text-align: center;
+  position: relative;
+
+}
+
+
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+ width: 150px;
+ border-radius: 50%;
+}
+
+/*
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+*/
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #000000;
+  color: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block;
+  color: white; /* White text color */
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar a:hover { /* Changes nav link block on hover */
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.active{
+  background-color: #000;
+  color: white;
+}
