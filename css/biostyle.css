@@ -3,16 +3,51 @@ body {
   background-color:silver;
 }
 
+/* Split the screen in half */
+.topside, .bottomside {
+  position: relative;
+  left: 0;
+  right: 0;
+  /*
+  position: fixed;
+  */
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.topside {
+  top: 0;
+  height:50%
+  background-color: LightBlue;
+  overflow:scroll;
+}
+
+/* Control the right side */
+.bottomside {
+ bottom: : 0;
+ height:50%;
+ background-color: Black;
+ color: white;
+}
+
+/* If you want the content centered horizontally and vertically */
+
 .centered {
   text-align: center;
   position: relative;
+
 }
 
+
+
 /* Style the image inside the centered container, if needed */
+
 .centered img {
  width: 150px;
  border-radius: 50%;
 }
+
+
 
 .header {
   padding: 5px;
