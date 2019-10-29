@@ -1,59 +1,43 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color:silver;
 }
 
-/* Split the screen in half */
 .topside, .bottomside {
   position: relative;
   left: 0;
   right: 0;
-  /*
-  position: fixed;
-  */
-  padding-top: 20px;
 }
 
-/* Control the left side */
 .topside {
   top: 0;
   height:50%
   background-color: LightBlue;
-  overflow:scroll;
 }
 
-/* Control the right side */
 .bottomside {
- bottom: : 0;
- height:50%;
+ bottom: 0;
+ 
  background-color: Black;
  color: white;
 }
 
-/* If you want the content centered horizontally and vertically */
-
 .centered {
   text-align: center;
   position: relative;
-
 }
 
-
-
-/* Style the image inside the centered container, if needed */
-
-.centered img {
- width: 150px;
- border-radius: 50%;
+/* Have a small rounded image */
+.miniround {
+  width: 150px;
+  border-radius: 50%;
 }
-
-
 
 .header {
   padding: 5px;
   text-align: center;
   background: #000000;
   color: white;
+  z-index: 1;
 }
 
 .navbar {
@@ -62,20 +46,21 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  /* overflow: hidden;  Hide overflow */
-  background-color: #333; /* Dark background color */
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
 }
 
 .navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
+  float: left; /* Keeps links side-by-side */
   display: block;
-  color: white; /* White text color */
+  color: white;
   text-align: center;
   padding: 10px 30px;
   text-decoration: none; /* Remove underline */
 }
 
-.navbar a:hover { /* Changes nav link block on hover */
+.navbar a:hover {
   background-color: #FFFFFF;
   color: black;
 }
@@ -90,17 +75,7 @@ body {
   color: white;
 }
 
-.main{
+.content{
   height: 100%;
-  margin:10px;
   width: 100%;
-}
-
-.roundedPaper{
-  border-radius: 50px;
-  background:url('../images/paper1.jpg');
-  background-repeat: repeat;
-  padding: 5px;
-  height: 100%;
-  opacity: 0.8;
 }
