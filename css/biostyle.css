@@ -6,19 +6,21 @@ body {
   position: relative;
   left: 0;
   right: 0;
+  overflow: auto ;
 }
 
 .topside {
   top: 0;
-  height:50%
+  height:50%;
   background-color: LightBlue;
 }
 
 .bottomside {
  bottom: 0;
- 
+ height:50%;
  background-color: Black;
  color: white;
+ 
 }
 
 .centered {
@@ -76,6 +78,7 @@ body {
 }
 
 .content{
+  position: absolute;
   height: 100%;
   width: 100%;
 }
